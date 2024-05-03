@@ -1,0 +1,62 @@
+:root {
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #0dcaf0;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --transparent: transparent;
+}
+
+
+.check-box-list-wrap {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--check-box-list-border-color);
+
+    &.primary {
+        --check-box-list-border-color: var(--primary);
+    }
+
+    &.secondary {
+        --check-box-list-border-color: var(--secondary);
+    }
+
+    &.success {
+        --check-box-list-border-color: var(--success);
+    }
+
+    &.danger {
+        --check-box-list-border-color: var(--danger);
+    }
+
+    &.warning {
+        --check-box-list-border-color: var(--warning);
+    }
+
+    &.info {
+        --check-box-list-border-color: var(--info);
+    }
+
+    &.light {
+        --check-box-list-border-color: var(--light);
+    }
+
+    &.dark {
+        --check-box-list-border-color: var(--dark);
+    }
+
+    &.transparent {
+        --check-box-list-border-color: var(--transparent);
+    }
+}
+
+.check-box-list__row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
