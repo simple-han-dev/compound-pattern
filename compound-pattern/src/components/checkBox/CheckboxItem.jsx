@@ -1,23 +1,24 @@
 import '../../stylesheets/common/check-box-list.css'
 import React from 'react';
-// import CheckboxContext from "../contexts/checkboxContext";
-// import useCheckboxContext from "../hooks/useCheckboxContext";
+import CheckboxContext from "../contexts/checkboxContext";
+import useCheckboxContext from "../hooks/useCheckboxContext";
 
 // CheckboxContext를 생성합니다.
-const CheckboxContext = React.createContext({
-    id: '',
-    isChecked: false,
-    isDisabled: false,
-    onChange: () => {
-        console.log('CheckboxContext onChanged!');
-    },
-});
-
-const useCheckboxContext = () => {
-    // useContext 훅을 사용하여 CheckboxContext의 값을 가져옵니다.
-    const context = React.useContext(CheckboxContext);
-    return context;
-};
+// const CheckboxContext = React.createContext({
+//     id: '',
+//     isChecked: false,
+//     isDisabled: false,
+//     onChange: () => {
+//         console.log('CheckboxContext onChanged!');
+//     },
+// });
+//
+// const useCheckboxContext = () => {
+//     // useContext 훅을 사용하여 CheckboxContext의 값을 가져옵니다.
+//     const context = React.useContext(CheckboxContext);
+//     console.log("context: ", CheckboxContext);
+//     return context;
+// };
 
 // CheckboxContext를 사용하여 Checkbox와 Label을 함께 묶어주는 CheckboxItem 컴포넌트를 생성합니다.
 const CheckboxItem = ({children, variant="primary", ...rest}) => {
